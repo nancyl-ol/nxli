@@ -53,6 +53,9 @@
 /*------------------------------------------------------------------
 [2. Blocks]
 */
+.e-block-home-custom {
+  padding: 37px 0 70px 0; }
+
 .e-block {
   padding: 100px 0 100px 0; }
 
@@ -1238,14 +1241,14 @@ ul.sf-menu > li, .sf-menu > li > a {
 /* Inner Pages Site Title and Page Title*/
 #header-wrapper #site-title h1 {
   font-size: 38px;
-  margin: 40px 0 0 0;
+  margin: 37px 0 0 0;
   text-transform: uppercase;
   color: #333; }
   #header-wrapper #site-title h1 a {
     color: #333;
     text-decoration: none; }
 #header-wrapper #page-title {
-  height: 500px;
+  height: 530px;
   width: 100%;
   padding: 80px 0 70px 0; }
   #header-wrapper #page-title .page-title-details {
