@@ -33,8 +33,10 @@ jQuery(document).ready(function () {
 
 
         /* Sticky Header */
-
-        jQuery(".sticky-header").sticky({topSpacing: 0});
+        var x = jQuery(".sticky-header");
+        x.sticky({topSpacing: 0});
+        x.parent().css({background:"#fff"});
+        //x.css({height:116});
 
 
         /* FlexSlider */
