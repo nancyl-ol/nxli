@@ -56,7 +56,7 @@
  *          http://twitpic.com/7p93st
  *      Instagram
  *          http://instagr.am/p/IejkuUGxQn/
- *          http://instagram.com/p/IejkuUGxQn/
+ *          http://www.instagram.com/p/IejkuUGxQn/
  *      Google maps
  *          http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17
  *          http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16
