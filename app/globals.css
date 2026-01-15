@@ -31,7 +31,9 @@ body {
 a:hover,
 a:focus-visible,
 button:hover,
-button:focus-visible {
+button:focus-visible,
+.interactive-element:hover,
+.interactive-element:focus-visible {
   text-decoration-line: underline;
   color: var(--color-indigo-400);
 }

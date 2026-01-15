@@ -96,7 +96,7 @@ export function Projects() {
     }
   }
 
-  const ProjectItem = ({ project, isLast }: { project: typeof projects[0], isLast: boolean }) => (
+  const ProjectItem = ({ project, isLast, isHidden }: { project: typeof projects[0], isLast: boolean, isHidden?: boolean }) => (
     <div
       className={`p-7 ${!isLast && 'border-b'} border-black hover:border-b-0 hover:border-l-4 hover:border-l-indigo-500 hover:bg-neutral-100 hover:scale-[1.03] hover:rounded-sm origin-center transition-all ${project.link && "hover:cursor-pointer"} group`}
       onClick={() => onClick(project.link)}
@@ -115,6 +115,7 @@ export function Projects() {
                 href={project.link}
                 aria-label="Project link"
                 target="_blank" rel="noreferrer noopener"
+                tabIndex={isHidden ? -1 : undefined}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/link.svg" alt="Link" width={16} height={16} className="group-hover:animate-[wiggle_1s_ease-in-out_infinite]" />
@@ -152,7 +153,7 @@ export function Projects() {
         <div className={`grid transition-[grid-template-rows] duration-1000 ease-in-out ${showAll ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
           <div className={`min-h-0 ${!showAll && 'overflow-hidden'}`}>
             {rest.map((project, index) => (
-              <ProjectItem key={index + defaultNumber} project={project} isLast={index === rest.length - 1} />
+              <ProjectItem key={index + defaultNumber} project={project} isLast={index === rest.length - 1} isHidden={!showAll} />
             ))}
           </div>
         </div>
