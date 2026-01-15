@@ -1,7 +1,6 @@
 "use client";
 import { Contact } from "./_components/contact";
 import { Hero } from "./_components/hero";
-import { Interests } from "./_components/interests";
 import { Intro } from "./_components/intro";
 import { Projects } from "./_components/projects";
 
@@ -11,7 +10,6 @@ export default function Home() {
       <Hero />
       <Intro />
       <Projects />
-      <Interests />
       <Contact />
     </div>
   );
