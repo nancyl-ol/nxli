@@ -161,7 +161,7 @@ export function Projects() {
 
       <button
         onClick={() => setShowAll(!showAll)}
-        className="mt-4 text-neutral-700 transition-colors hover:cursor-pointer hover:text-indigo-500"
+        className="mt-4 text-neutral-800 transition-colors hover:cursor-pointer hover:text-indigo-500"
       >
         {showAll ? 'Show less ↑' : 'Show all ↓'}
       </button>
