@@ -1,5 +1,7 @@
 "use client";
+import { useState } from 'react';
 
+const defaultNumber = 5;
 const projects = [
   {
     title: 'OneNote Class Notebook',
@@ -86,58 +88,81 @@ const projects = [
 ];
 
 export function Projects() {
+  const [showAll, setShowAll] = useState(false);
+
   const onClick = (link : string|undefined) => {
     if (link) {
       window.open(link, '_blank', 'noopener,noreferrer');
     }
   }
 
+  const ProjectItem = ({ project, isLast }: { project: typeof projects[0], isLast: boolean }) => (
+    <div
+      className={`p-7 ${!isLast && 'border-b'} border-black hover:bg-neutral-100 transition-colors ${project.link && "hover:cursor-pointer"} group`}
+      onClick={() => onClick(project.link)}
+    >
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className="md:col-span-2">
+          <span className="text-neutral-700">{project.year}</span>
+        </div>
+        <div className="md:col-span-10">
+          <div className="flex items-start justify-between gap-4 mb-2">
+            <h3 className="text-neutral-950 text-lg font-medium group-hover:text-indigo-500 transition">
+              {project.title}
+            </h3>
+            {project.link && (
+              <a
+                href={project.link}
+                aria-label="Project link"
+                target="_blank" rel="noreferrer noopener"
+              >
+                🔗
+              </a>
+            )}
+          </div>
+          <p className="text-neutral-700 mb-4">{project.description}</p>
+          <div className="flex flex-wrap gap-3">
+            {project.tech.map((tech, techIndex) => (
+              <span
+                key={techIndex}
+                className="rounded-sm p-1 px-2 text-neutral-700 bg-indigo-100 text-sm uppercase tracking-wide"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const firstProjects = projects.slice(0, defaultNumber);
+  const rest = projects.slice(defaultNumber);
+
   return (
     <section id="projects" className="px-6 py-18 max-w-4xl mx-auto border-b border-black">
       <h2 className="text-neutral-950 mb-12 pb-3 border-b-2 border-black inline-block text-xl font-medium">Projects</h2>
-      
-      <div className="space-y-0 border border-black">
-        {projects.map((project, index) => (
-          <div 
-            key={index}
-            className={`p-7 border-b border-black last:border-b-0 hover:bg-neutral-100 transition-colors ${project.link && "hover:cursor-pointer"} group`}
-            onClick={() => onClick(project.link)}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-              <div className="md:col-span-2">
-                <span className="text-neutral-700">{project.year}</span>
-              </div>
-              <div className="md:col-span-10">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <h3 className="text-neutral-950 text-lg font-medium group-hover:text-indigo-500 transition">
-                    {project.title}
-                  </h3>
-                  {project.link && (
-                    <a 
-                      href={project.link}
-                      aria-label="Project link"
-                      target="_blank" rel="noreferrer noopener"
-                    >
-                      🔗
-                    </a>
-                  )}
-                </div>
-                <p className="text-neutral-700 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-4">
-                  {project.tech.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="rounded-sm p-1 text-neutral-700 bg-indigo-100 text-sm uppercase tracking-wide"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+
+      <div className="space-y-0 border border-black rounded-xs">
+        {firstProjects.map((project, index) => (
+          <ProjectItem key={index} project={project} isLast={!showAll && index === defaultNumber - 1} />
         ))}
+
+        <div className={`grid transition-[grid-template-rows] duration-1000 ease-in-out ${showAll ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+          <div className="overflow-hidden min-h-0">
+            {rest.map((project, index) => (
+              <ProjectItem key={index + defaultNumber} project={project} isLast={index === rest.length - 1} />
+            ))}
+          </div>
+        </div>
       </div>
+
+      <button
+        onClick={() => setShowAll(!showAll)}
+        className="mt-4 text-neutral-700 transition-colors hover:cursor-pointer hover:text-indigo-500"
+      >
+        {showAll ? 'Show less ↑' : 'Show all ↓'}
+      </button>
     </section>
   );
 }
