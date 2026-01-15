@@ -117,7 +117,7 @@ export function Projects() {
                 target="_blank" rel="noreferrer noopener"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/link.svg" alt="Link" width={16} height={16} />
+                <img src="/link.svg" alt="Link" width={16} height={16} className="group-hover:animate-[wiggle_1s_ease-in-out_infinite]" />
               </a>
             )}
           </div>
