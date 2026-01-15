@@ -3,9 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --cursor-skiing: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>⛷️</text></svg>") 16 0,auto;
-  --cursor-tennis: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>🎾</text></svg>") 16 0,auto;
-  --cursor-travel: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>✈️</text></svg>") 16 0,auto;
+  --cursor-skiing: url("/skier.svg") 10 10, auto;
+  --cursor-tennis: url("/tennis.svg") 10 10, auto;
+  --cursor-travel: url("/airplane.svg") 10 10, auto;
+  --ski-color: var(--color-cyan-400);
+  --tennis-color: var(--color-lime-400);
+  --travel-color: var(--color-sky-400);
 }
 
 @theme inline {

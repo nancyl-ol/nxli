@@ -38,7 +38,7 @@ export function Intro() {
           <br/><br/>
           I&apos;m currently on a career break, using the time to reset, explore, and grow.
           Previously, I worked at <a className="text-neutral-950" target="_blank" rel="noreferrer noopener" href="https://www.microsoft.com/education">Microsoft</a> building education products for classrooms around the world.
-          When I&apos;m not tinkering or learning something new, you&apos;ll find me <span className="cursor-(--cursor-skiing) text-neutral-950 hover:text-cyan-400" onClick={() => onClick(CursorStyle.skiing)}>skiing</span>, on a <span className="cursor-(--cursor-tennis) text-neutral-950 hover:text-lime-400" onClick={() => onClick(CursorStyle.tennis)}>tennis court</span>, or planning my next <span className="cursor-(--cursor-travel) text-neutral-950 hover:text-sky-400" onClick={() => onClick(CursorStyle.travel)}>travel adventure</span>.
+          When I&apos;m not tinkering or learning something new, you&apos;ll find me <span className={`cursor-(--cursor-skiing) hover:text-(--ski-color) ${cursorStyle === CursorStyle.skiing ? 'text-(--ski-color)' : 'text-neutral-950'}`} onClick={() => onClick(CursorStyle.skiing)}>skiing</span>, on a <span className={`cursor-(--cursor-tennis) hover:text-(--tennis-color) ${cursorStyle === CursorStyle.tennis ? 'text-(--tennis-color)' : 'text-neutral-950'}`} onClick={() => onClick(CursorStyle.tennis)}>tennis court</span>, or planning my next <span className={`cursor-(--cursor-travel) hover:text-(--travel-color) ${cursorStyle === CursorStyle.travel ? 'text-(--travel-color)' : 'text-neutral-950'}`} onClick={() => onClick(CursorStyle.travel)}>travel adventure</span>.
       </div>
     </section>
   );
