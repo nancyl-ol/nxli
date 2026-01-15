@@ -1,3 +1,5 @@
+"use client";
+
 const contactLinks = [
   {
     label: 'Email',
@@ -19,7 +21,7 @@ const contactLinks = [
 
 export function Contact() {
   return (
-    <section id="contact" className="px-6 py-20 pb-32 max-w-4xl mx-auto">
+    <section id="contact" className="px-6 py-18 pb-32 max-w-4xl mx-auto">
       <h2 className="text-neutral-900 mb-12 pb-3 border-b-2 border-black inline-block">Contact</h2>
       
       <p className="text-neutral-600 mb-12 max-w-xl">
@@ -32,6 +34,7 @@ export function Contact() {
             key={index}
             href={contact.href}
             className="block border-b border-neutral-300 pb-2 text-neutral-900 hover:text-neutral-500 transition-colors"
+            target="_blank" rel="noreferrer noopener"
           >
             {contact.label} →
           </a>

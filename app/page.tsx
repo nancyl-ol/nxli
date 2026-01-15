@@ -1,3 +1,4 @@
+"use client";
 import { Contact } from "./_components/contact";
 import { Hero } from "./_components/hero";
 import { Interests } from "./_components/interests";

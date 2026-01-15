@@ -1,3 +1,4 @@
+"use client";
 import styles from './hero.module.css'
 
 export function Hero() {
@@ -29,7 +30,7 @@ export function Hero() {
               Nancy
             </h1>
             <p className={`${styles.heroText} ${styles.heroSubtitle} text-l md:text-xl`}>
-              Software engineer by trade, lifelong learner by heart.
+              Software engineer by training, lifelong learner at heart.
             </p>
           </div>
         </div>
