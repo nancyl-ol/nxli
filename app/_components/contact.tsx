@@ -19,7 +19,7 @@ export function Contact() {
   const [emailRevealed, setEmailRevealed] = useState(false);
 
   return (
-    <section id="contact" className="px-6 py-18 max-w-4xl mx-auto border-b border-black">
+    <section id="contact" className="px-3 md:px-6 py-18 max-w-4xl mx-3 md:mx-auto border-b border-black">
       <h2 className="text-neutral-950 mb-8 pb-3 border-b-2 border-black inline-block text-xl font-medium">Contact</h2>
 
       <p className="text-neutral-600 mb-8 max-w-xl">

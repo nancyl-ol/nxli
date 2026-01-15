@@ -5,7 +5,7 @@ const defaultNumber = 5;
 const projects = [
   {
     title: 'OneNote Class Notebook',
-    description: 'OneNote for the classroom, built for collaboration and sharing materials and assignments',
+    description: 'OneNote for the classroom, built for collaboration and sharing of materials and assignments',
     tech: ['15M MAU', 'C#', 'Azure', 'React TS', 'Razor'],
     link: 'https://www.onenote.com/classnotebook',
     year: '2025'
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: 'School Connection Private Preview',
-    description: 'Increase visiblity for parents and guardians for their child\'s academic progress',
+    description: 'Increase visiblity for parents and guardians into their child\'s academic progress',
     tech: ['20+ schools', 'C#', 'Azure', 'ASP.NET', 'GraphQL', 'React TS', 'Webpack'],
     link: 'https://techcommunity.microsoft.com/blog/educationblog/introducing-school-connection-a-new-way-for-parents-and-guardians-to-stay-engage/4006352',
     year: '2022'
@@ -101,7 +101,7 @@ export function Projects() {
       className={`p-7 ${!isLast && 'border-b'} border-black hover:border-b-0 hover:border-l-4 hover:border-l-indigo-500 hover:bg-neutral-100 hover:scale-[1.03] hover:rounded-sm origin-center transition-all ${project.link && "hover:cursor-pointer"} group`}
       onClick={() => onClick(project.link)}
     >
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-1">
         <div className="md:col-span-2">
           <span className="text-neutral-700">{project.year}</span>
         </div>
@@ -142,7 +142,7 @@ export function Projects() {
   const rest = projects.slice(defaultNumber);
 
   return (
-    <section id="projects" className="px-6 py-18 max-w-4xl mx-auto border-b border-black">
+    <section id="projects" className="px-3 md:px-6 py-18 max-w-4xl mx-3 md:mx-auto border-b border-black">
       <h2 className="text-neutral-950 mb-12 pb-3 border-b-2 border-black inline-block text-xl font-medium">Projects</h2>
 
       <div className="space-y-0 border border-black rounded-xs">
