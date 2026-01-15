@@ -122,7 +122,7 @@ export function Projects() {
               </a>
             )}
           </div>
-          <p className="text-neutral-800 mb-4">{project.description}</p>
+          <p className="text-neutral-700 mb-4">{project.description}</p>
           <div className="flex flex-wrap gap-3">
             {project.tech.map((tech, techIndex) => (
               <span

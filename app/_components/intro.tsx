@@ -33,7 +33,7 @@ export function Intro() {
 
   return (
     <section id="intro" className="px-6 pt-18 max-w-4xl mx-auto">
-      <div className="text-stone-500 text-base md:text-lg leading-relaxed italic">
+      <div className="text-neutral-500 text-base md:text-lg leading-relaxed italic">
           I love turning technology into meaningful, human-centered solutions.
           <br/><br/>
           I&apos;m currently on a career break, using the time to reset, explore, and grow.

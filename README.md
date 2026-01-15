@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nxli
+
+Personal portfolio website.
+
+## Overview
+
+A modern, single-page portfolio built with Next.js and Tailwind CSS. Features include:
+
+- Hero section with banner and avatar
+- Personal bio with interactive cursor styling
+- Projects showcase (2015-2025)
+- Contact links (GitHub, LinkedIn, email)
+- Responsive design with subtle animations
+
+### Tech Stack
+
+- **Next.js** - React framework with static export
+- **React 19** - UI library
+- **Tailwind CSS 4** - Utility-first styling
+- **TypeScript** - Type safety
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18 or higher recommended)
+- npm, yarn, pnpm, or bun
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd nxli
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The page auto-updates as you edit files.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy on Firebase
 
-## Deploy on Vercel
+This project is configured for Firebase Hosting as a static site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Firebase CLI](https://firebase.google.com/docs/cli) installed globally:
+  ```bash
+  npm install -g firebase-tools
+  ```
+
+- Logged into Firebase:
+  ```bash
+  firebase login
+  ```
+
+### Deployment Steps
+
+1. Build the static export:
+   ```bash
+   npm run build
+   ```
+   This generates static files in the `out/` directory.
+
+2. Deploy to Firebase Hosting:
+   ```bash
+   firebase deploy --only hosting
+   ```
+
+The site will be deployed to the configured Firebase project (`nxli-adf02`).
