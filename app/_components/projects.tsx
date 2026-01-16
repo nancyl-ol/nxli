@@ -5,7 +5,7 @@ const defaultNumber = 5;
 const projects = [
   {
     title: 'OneNote Class Notebook',
-    description: 'OneNote for the classroom, built for collaboration and sharing of materials and assignments',
+    description: 'OneNote for the classroom, built for collaboration and sharing materials and assignments',
     tech: ['15M MAU', 'C#', 'Azure', 'React TS', 'Razor'],
     link: 'https://www.onenote.com/classnotebook',
     year: '2025'
@@ -19,14 +19,14 @@ const projects = [
   },
   {
     title: 'Search Progress',
-    description: 'Information literacy training to teacher students effective search query composition and result evaluation',
+    description: 'Information literacy training that helps students craft effective search queries and evaluate results with confidence',
     tech: ['10k MAU', 'C#', 'Azure', 'ASP.NET', 'React TS', 'Webpack'],
     link: 'https://techcommunity.microsoft.com/blog/educationblog/introducing-search-progress-a-new-way-to-assign-and-track-research-projects-in-m/3903493',
     year: '2023'
   },
   {
     title: 'School Connection Private Preview',
-    description: 'Increase visiblity for parents and guardians into their child\'s academic progress',
+    description: 'Provides parents and guardians with clear visibility into their child\'s academic progress',
     tech: ['20+ schools', 'C#', 'Azure', 'ASP.NET', 'GraphQL', 'React TS', 'Webpack'],
     link: 'https://techcommunity.microsoft.com/blog/educationblog/introducing-school-connection-a-new-way-for-parents-and-guardians-to-stay-engage/4006352',
     year: '2022'
@@ -79,7 +79,7 @@ const projects = [
     year: '2016'
   },
   {
-    title: 'Surrondify',
+    title: 'Surroundify',
     description: 'Hackathon project to synchronously stream music across devices',
     tech: ['HTML', 'CSS', 'Bootstrap'],
     link: 'https://devpost.com/software/surroundify',
