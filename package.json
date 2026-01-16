@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run validate-i18n && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate-i18n": "npx tsx scripts/validate-i18n.ts"
   },
   "dependencies": {
     "next": "^16.1.1",
+    "next-intl": "^4.7.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
@@ -21,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.5",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

@@ -1,7 +1,10 @@
 "use client";
-import styles from './hero.module.css'
+import { useTranslations } from 'next-intl';
+import styles from './hero.module.css';
 
 export function Hero() {
+  const t = useTranslations('hero');
+
   return (
     <section className="relative w-full h-[300px] md:h-[450px] border-b border-black overflow-hidden">
       {/* Background Image */}
@@ -20,17 +23,17 @@ export function Hero() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/avatar.png"
-            alt="Nancy"
+            alt={t('name')}
             width="112"
             height="112"
             className="h-40 md:h-50 w-auto -mb-3"
           />
           <div className="space-y-4 md:space-y-6 md:pb-2">
             <h1 className={`${styles.heroText} ${styles.heroTitle} text-5xl md:text-7xl`}>
-              Nancy
+              {t('name')}
             </h1>
             <p className={`${styles.heroText} ${styles.heroSubtitle} text-l md:text-xl`}>
-              Software engineer by training, lifelong learner at heart.
+              {t('subtitle')}
             </p>
           </div>
         </div>

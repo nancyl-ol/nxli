@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "name": "李晓寒",
+    "subtitle": "软件工程为业，求知探索为心"
+  },
+  "intro": {
+    "paragraph1": "我喜欢把科技转化为真正有意义、以人为本的解决方案。",
+    "paragraph2": "我目前正处于一段职业间歇期，给自己一点时间充电、探索与成长。之前，我在<microsoft>微软</microsoft>工作，为全球的老师和学生们打造教育产品。当我不在鼓捣或学习新东西的时候，我常常在<skiing>滑雪</skiing>、<tennis>打网球</tennis>，或者在规划下一次的<travel>旅行</travel>。"
+  },
+  "projects": {
+    "title": "项目",
+    "showAll": "显示全部",
+    "showLess": "收起",
+    "items": [
+      {
+        "title": "OneNote 课堂笔记本",
+        "description": "为课堂协作而生的 OneNote，支持资料共享与作业管理",
+        "tech": ["1500万月活", "C#", "Azure", "React TS", "Razor"],
+        "link": "https://www.onenote.com/classnotebook",
+        "year": "2025"
+      },
+      {
+        "title": "阅读教练",
+        "description": "为每位学生提供 AI 驱动的量身定制的阅读练习",
+        "tech": ["15万月活", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
+        "link": "https://unlocked.microsoft.com/reading-coach/",
+        "year": "2024"
+      },
+      {
+        "title": "搜索指导",
+        "description": "帮助学生提升信息素养，学会撰写有效的搜索关键词并判断结果",
+        "tech": ["1万月活", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
+        "link": "https://learn.microsoft.com/training/educator-center/product-guides/search-coach",
+        "year": "2023"
+      },
+      {
+        "title": "School Connection（预览版）",
+        "description": "让家长与监护人更清楚地追踪孩子在学校的学习进展",
+        "tech": ["20+学校", "C#", "Azure", "ASP.NET", "GraphQL", "React TS", "Webpack"],
+        "link": "https://techcommunity.microsoft.com/blog/educationblog/introducing-school-connection-a-new-way-for-parents-and-guardians-to-stay-engage/4006352",
+        "year": "2022"
+      },
+      {
+        "title": "Dash",
+        "description": "Edge 浏览器扩展，让用户可以训练自己的 AI 代理在线执行个性化任务",
+        "tech": ["JavaScript"],
+        "link": "https://news.microsoft.com/source/features/work-life/what-if-you-could-train-your-browser-what-to-do-customizable-digital-assistant-wins-microsofts-first-all-virtual-hackathon/",
+        "year": "2020"
+      },
+      {
+        "title": "Windows Web 帐户管理器",
+        "description": "在每一个 Windows 设备上提供网络账户身份管理的系统组件",
+        "tech": ["C++"],
+        "link": "https://learn.microsoft.com/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam",
+        "year": "2019"
+      },
+      {
+        "title": "APPINITE：人机交互研究",
+        "description": "为 Android 用户设计的“示例式编程”系统",
+        "tech": ["Java"],
+        "link": "/APPINITE.pdf",
+        "year": "2017"
+      },
+      {
+        "title": "自然认证",
+        "description": "实习项目：扩展 Windows 自然身份验证服务以利用更多信号种类",
+        "tech": ["C++"],
+        "year": "2017"
+      },
+      {
+        "title": "\"Pebbles\" 内核",
+        "description": "从零构建的类 UNIX 简易操作系统",
+        "tech": ["C"],
+        "year": "2017"
+      },
+      {
+        "title": "维基百科问答系统",
+        "description": "基于维基百科文章的自然语言问答生成系统",
+        "tech": ["Python", "NLTK"],
+        "link": "https://www.youtube.com/watch?v=D-5220Znohk",
+        "year": "2016"
+      },
+      {
+        "title": "动态锁",
+        "description": "实习项目：基于蓝牙设备距离的 Windows 自动锁屏功能的原型设计",
+        "tech": ["C++"],
+        "link": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock",
+        "year": "2016"
+      },
+      {
+        "title": "Surroundify",
+        "description": "黑客松项目：在多设备间同步播放音乐",
+        "tech": ["HTML", "CSS", "Bootstrap"],
+        "link": "https://devpost.com/software/surroundify",
+        "year": "2015"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系方式",
+    "availability": "欢迎新的机会。",
+    "emailReveal": "邮箱"
+  },
+  "footer": {
+    "credit": "网站使用 <figma>Figma AI</figma> 设计，基于 <nextjs>Next.js</nextjs> 与 <tailwind>Tailwind CSS</tailwind> 构建，并在 <vscode>Visual Studio Code</vscode> 中完成，由 <claude>Claude Code</claude> 协助开发。",
+    "switchToEnglish": "English version",
+    "switchToChinese": "中文版"
+  }
+}

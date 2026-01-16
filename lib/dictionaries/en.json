@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "name": "Nancy",
+    "subtitle": "Software engineer by training, lifelong learner at heart."
+  },
+  "intro": {
+    "paragraph1": "I love turning technology into meaningful, human-centered solutions.",
+    "paragraph2": "I'm currently on a career break, using the time to reset, explore, and grow. Previously, I worked at <microsoft>Microsoft</microsoft> building education products for classrooms around the world. When I'm not tinkering or learning something new, you'll find me <skiing>skiing</skiing>, on a <tennis>tennis court</tennis>, or planning my next <travel>travel adventure</travel>."
+  },
+  "projects": {
+    "title": "Projects",
+    "showAll": "Show all",
+    "showLess": "Show less",
+    "items": [
+      {
+        "title": "OneNote Class Notebook",
+        "description": "OneNote for the classroom, built for collaboration and sharing materials and assignments",
+        "tech": ["15M MAU", "C#", "Azure", "React TS", "Razor"],
+        "link": "https://www.onenote.com/classnotebook",
+        "year": "2025"
+      },
+      {
+        "title": "Reading Coach",
+        "description": "AI-powered personalized reading practice for every student",
+        "tech": ["150k MAU", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
+        "link": "https://unlocked.microsoft.com/reading-coach/",
+        "year": "2024"
+      },
+      {
+        "title": "Search Progress",
+        "description": "Information literacy training that helps students craft effective search queries and evaluate results with confidence",
+        "tech": ["10k MAU", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
+        "link": "https://techcommunity.microsoft.com/blog/educationblog/introducing-search-progress-a-new-way-to-assign-and-track-research-projects-in-m/3903493",
+        "year": "2023"
+      },
+      {
+        "title": "School Connection Private Preview",
+        "description": "Provides parents and guardians with clear visibility into their child's academic progress",
+        "tech": ["20+ schools", "C#", "Azure", "ASP.NET", "GraphQL", "React TS", "Webpack"],
+        "link": "https://techcommunity.microsoft.com/blog/educationblog/introducing-school-connection-a-new-way-for-parents-and-guardians-to-stay-engage/4006352",
+        "year": "2022"
+      },
+      {
+        "title": "Dash",
+        "description": "Edge extension that lets users train an AI agent to perform personalized tasks online",
+        "tech": ["JavaScript"],
+        "link": "https://news.microsoft.com/source/features/work-life/what-if-you-could-train-your-browser-what-to-do-customizable-digital-assistant-wins-microsofts-first-all-virtual-hackathon/",
+        "year": "2020"
+      },
+      {
+        "title": "Windows Web Account Manager",
+        "description": "OS component enabling cloud identity experiences on every Windows device",
+        "tech": ["C++"],
+        "link": "https://learn.microsoft.com/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam",
+        "year": "2019"
+      },
+      {
+        "title": "APPINITE: HCI Research",
+        "description": "Programming-by-demonstration system for Android users",
+        "tech": ["Java"],
+        "link": "/APPINITE.pdf",
+        "year": "2017"
+      },
+      {
+        "title": "Natural Authentication",
+        "description": "Internship project to extend the Windows Natural Authentication service to leverage additional signals",
+        "tech": ["C++"],
+        "year": "2017"
+      },
+      {
+        "title": "\"Pebbles\" Kernel",
+        "description": "Simple UNIX-like operating system built from scratch",
+        "tech": ["C"],
+        "year": "2017"
+      },
+      {
+        "title": "Wikipedia Q&A",
+        "description": "Natural language system for question & answer generation based on a given Wikipedia article",
+        "tech": ["Python", "NLTK"],
+        "link": "https://www.youtube.com/watch?v=D-5220Znohk",
+        "year": "2016"
+      },
+      {
+        "title": "Dynamic Lock",
+        "description": "Internship project to prototype a Windows auto-locking mechanism when you walk away with your paired Bluetooth device",
+        "tech": ["C++"],
+        "link": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock",
+        "year": "2016"
+      },
+      {
+        "title": "Surroundify",
+        "description": "Hackathon project to synchronously stream music across devices",
+        "tech": ["HTML", "CSS", "Bootstrap"],
+        "link": "https://devpost.com/software/surroundify",
+        "year": "2015"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "availability": "Available for new opportunities.",
+    "emailReveal": "Email"
+  },
+  "footer": {
+    "credit": "Designed using <figma>Figma AI</figma>, built with <nextjs>Next.js</nextjs> and <tailwind>Tailwind CSS</tailwind> in <vscode>Visual Studio Code</vscode>, with the help of <claude>Claude Code</claude>.",
+    "switchToEnglish": "English version",
+    "switchToChinese": "中文版"
+  }
+}
