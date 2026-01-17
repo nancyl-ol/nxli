@@ -3,9 +3,10 @@ import { useRouter } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import type { ReactNode } from 'react';
 import { LOCALE_KEY } from '@/lib/utils';
+import type { Locale } from '@/lib/i18n';
 
 const FooterLink = ({ url, children }: { url: string; children: ReactNode }) => (
-  <a className="text-stone-800" target="_blank" rel="noreferrer noopener" href={url}>
+  <a className="text-stone-700" target="_blank" rel="noreferrer noopener" href={url}>
     {children}
   </a>
 );
@@ -15,13 +16,23 @@ export function Footer() {
   const locale = useLocale();
   const router = useRouter();
 
-  const toggleLanguage = () => {
-    const newLocale = locale === 'en' ? 'zh' : 'en';
+  const switchToLocale = (newLocale: Locale) => {
     localStorage.setItem(LOCALE_KEY, newLocale);
     router.push(`/${newLocale}`);
   };
 
-  const toggleText = locale === 'en' ? t('switchToChinese') : t('switchToEnglish');
+  const otherLocales = (['en', 'zh', 'es'] as const).filter((l) => l !== locale);
+
+  const getToggleText = (targetLocale: Locale) => {
+    switch (targetLocale) {
+      case 'en':
+        return t('switchToEnglish');
+      case 'zh':
+        return t('switchToChinese');
+      case 'es':
+        return t('switchToSpanish');
+    }
+  };
 
   return (
     <footer className="px-6 py-8 max-w-4xl mx-auto">
@@ -35,14 +46,19 @@ export function Footer() {
             claude: (chunks) => <FooterLink url="https://claude.ai/code">{chunks}</FooterLink>,
           })}
         </p>
-        <button
-          onClick={toggleLanguage}
-          className="flex items-center gap-1.5 text-stone-800 text-sm transition-colors cursor-pointer w-fit"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/language.svg" alt="" className="h-[1em]" />
-          {toggleText}
-        </button>
+        <div className="flex flex-col gap-2">
+          {otherLocales.map((targetLocale) => (
+            <button
+              key={targetLocale}
+              onClick={() => switchToLocale(targetLocale)}
+              className="flex items-center gap-1.5 text-stone-700 text-sm transition-colors cursor-pointer w-fit"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/language.svg" alt="" className="h-[1em]" />
+              {getToggleText(targetLocale)}
+            </button>
+          ))}
+        </div>
       </div>
     </footer>
   );

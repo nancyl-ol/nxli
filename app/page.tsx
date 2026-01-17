@@ -8,7 +8,7 @@ function getPreferredLocale(): Locale {
   // Check localStorage for saved preference
   if (typeof window !== 'undefined') {
     const saved = localStorage.getItem(LOCALE_KEY);
-    if (saved === 'en' || saved === 'zh') {
+    if (saved === 'en' || saved === 'zh' || saved === 'es') {
       return saved;
     }
   }
@@ -18,6 +18,9 @@ function getPreferredLocale(): Locale {
     const browserLang = navigator.language.toLowerCase();
     if (browserLang.startsWith('zh')) {
       return 'zh';
+    }
+    if (browserLang.startsWith('es')) {
+      return 'es';
     }
   }
 

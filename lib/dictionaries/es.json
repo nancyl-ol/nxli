@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "name": "Nancy",
+    "subtitle": "Ingeniera de profesión, estudiante de corazón."
+  },
+  "intro": {
+    "paragraph1": "Me encanta usar la tecnología para crear soluciones significativas y centradas en las personas.",
+    "paragraph2": "En este momento estoy tomando una pausa profesional para recargar energía, explorar y seguir creciendo. Antes de eso, trabajé en <microsoft>Microsoft</microsoft>, donde creé productos educativos usados en aulas alrededor del mundo. Cuando no estoy aprendiendo algo nuevo o trasteando con ideas, me encuentras <skiing>esquiando</skiing>, jugando <tennis>tenis</tennis>, o planeando mi próxima <travel>aventura de viaje</travel>."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "showAll": "Mostrar todos",
+    "showLess": "Mostrar menos",
+    "items": [
+      {
+        "title": "Bloc de notas de clase de OneNote",
+        "description": "OneNote para el aula, diseñado para la colaboración y el intercambio de materiales y tareas",
+        "tech": ["15M MAU", "C#", "Azure", "React TS", "Razor"],
+        "link": "https://www.onenote.com/classnotebook",
+        "year": "2025"
+      },
+      {
+        "title": "Asesor de Lectura",
+        "description": "Práctica de lectura personalizada impulsada por IA para cada estudiante",
+        "tech": ["150k MAU", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
+        "link": "https://unlocked.microsoft.com/reading-coach/",
+        "year": "2024"
+      },
+      {
+        "title": "Progreso de Búsqueda",
+        "description": "Entrenamiento en alfabetización informacional para ayudar a los estudiantes a crear mejores consultas de búsqueda y evaluar resultados de manera efectiva",
+        "tech": ["10k MAU", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
+        "link": "https://techcommunity.microsoft.com/blog/educationblog/introducing-search-progress-a-new-way-to-assign-and-track-research-projects-in-m/3903493",
+        "year": "2023"
+      },
+      {
+        "title": "School Connection (vista previa privada)",
+        "description": "Da a padres y acudientes una visión más clara del progreso académico de sus hijos",
+        "tech": ["20+ colegios", "C#", "Azure", "ASP.NET", "GraphQL", "React TS", "Webpack"],
+        "link": "https://techcommunity.microsoft.com/blog/educationblog/introducing-school-connection-a-new-way-for-parents-and-guardians-to-stay-engage/4006352",
+        "year": "2022"
+      },
+      {
+        "title": "Dash",
+        "description": "Extensión de Edge que permite entrenar un agente de IA para realizar tareas personalizadas en línea",
+        "tech": ["JavaScript"],
+        "link": "https://news.microsoft.com/source/features/work-life/what-if-you-could-train-your-browser-what-to-do-customizable-digital-assistant-wins-microsofts-first-all-virtual-hackathon/",
+        "year": "2020"
+      },
+      {
+        "title": "Administrador de Cuentas Web",
+        "description": "Componente del sistema operativo que habilita experiencias de identidad con las cuentas de la nube en cada dispositivo Windows",
+        "tech": ["C++"],
+        "link": "https://learn.microsoft.com/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam",
+        "year": "2019"
+      },
+      {
+        "title": "APPINITE: Investigación en IHC",
+        "description": "Sistema de programación por demostración para usuarios de Android",
+        "tech": ["Java"],
+        "link": "/APPINITE.pdf",
+        "year": "2017"
+      },
+      {
+        "title": "Autenticación Natural",
+        "description": "Proyecto de pasantía para extender el servicio de autenticación natural de Windows aprovechando señales adicionales",
+        "tech": ["C++"],
+        "year": "2017"
+      },
+      {
+        "title": "Kernel \"Pebbles\"",
+        "description": "Sistema operativo sencillo, tipo UNIX, construido desde cero",
+        "tech": ["C"],
+        "year": "2017"
+      },
+      {
+        "title": "Wikipedia Q&A",
+        "description": "Sistema de lenguaje natural para generar preguntas y respuestas a partir de artículos de Wikipedia",
+        "tech": ["Python", "NLTK"],
+        "link": "https://www.youtube.com/watch?v=D-5220Znohk",
+        "year": "2016"
+      },
+      {
+        "title": "Bloqueo Dinámico",
+        "description": "Proyecto de pasantía para crear un prototipo de mecanismo de bloqueo automático de Windows basado en la distancia de un dispositivo Bluetooth emparejado",
+        "tech": ["C++"],
+        "link": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock",
+        "year": "2016"
+      },
+      {
+        "title": "Surroundify",
+        "description": "Proyecto de hackathon para reproducir música de forma sincronizada entre varios dispositivos",
+        "tech": ["HTML", "CSS", "Bootstrap"],
+        "link": "https://devpost.com/software/surroundify",
+        "year": "2015"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "availability": "Disponible para nuevas oportunidades.",
+    "emailReveal": "Correo"
+  },
+  "footer": {
+    "credit": "Diseñado con <figma>Figma AI</figma>, construido con <nextjs>Next.js</nextjs> y <tailwind>Tailwind CSS</tailwind> en <vscode>Visual Studio Code</vscode>, con la ayuda de <claude>Claude Code</claude>.",
+    "switchToEnglish": "English version",
+    "switchToChinese": "中文版",
+    "switchToSpanish": "Versión en español"
+  }
+}

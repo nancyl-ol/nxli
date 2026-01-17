@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { getCssVar } from '@/lib/utils';
 
 enum CursorStyle {
@@ -12,6 +12,9 @@ enum CursorStyle {
 
 export function Intro() {
   const t = useTranslations('intro');
+  const locale = useLocale();
+  const normalFontWeight = locale === 'zh' ? 'font-medium' : 'font-normal';
+  const boldFontWeight = locale === 'zh' ? 'font-semibold' : 'font-medium';
   const [cursorStyle, setCursorStyle] = useState<CursorStyle>(CursorStyle.none);
 
   const onClick = (targetStyle: CursorStyle) => {
@@ -35,13 +38,13 @@ export function Intro() {
 
   return (
     <section id="intro" className="px-6 pt-18 max-w-4xl mx-auto">
-      <div className="text-neutral-600 text-base md:text-lg leading-relaxed italic">
+      <div className={`text-neutral-500 text-base md:text-lg leading-relaxed italic ${normalFontWeight}`}>
         {t('paragraph1')}
         <br /><br />
         {t.rich('paragraph2', {
           microsoft: (chunks) => (
             <a
-              className="text-neutral-950 font-medium"
+              className={`text-neutral-950 ${boldFontWeight}`}
               target="_blank"
               rel="noreferrer noopener"
               href="https://www.microsoft.com/education"
@@ -51,7 +54,7 @@ export function Intro() {
           ),
           skiing: (chunks) => (
             <span
-              className={`cursor-(--cursor-skiing) hover:text-(--ski-color) ${cursorStyle === CursorStyle.skiing ? 'text-(--ski-color)' : 'text-neutral-950'} font-medium`}
+              className={`cursor-(--cursor-skiing) hover:text-(--ski-color) ${cursorStyle === CursorStyle.skiing ? 'text-(--ski-color)' : 'text-neutral-950'} ${boldFontWeight}`}
               onClick={() => onClick(CursorStyle.skiing)}
             >
               {chunks}
@@ -59,7 +62,7 @@ export function Intro() {
           ),
           tennis: (chunks) => (
             <span
-              className={`cursor-(--cursor-tennis) hover:text-(--tennis-color) ${cursorStyle === CursorStyle.tennis ? 'text-(--tennis-color)' : 'text-neutral-950'} font-medium`}
+              className={`cursor-(--cursor-tennis) hover:text-(--tennis-color) ${cursorStyle === CursorStyle.tennis ? 'text-(--tennis-color)' : 'text-neutral-950'} ${boldFontWeight}`}
               onClick={() => onClick(CursorStyle.tennis)}
             >
               {chunks}
@@ -67,7 +70,7 @@ export function Intro() {
           ),
           travel: (chunks) => (
             <span
-              className={`cursor-(--cursor-travel) hover:text-(--travel-color) ${cursorStyle === CursorStyle.travel ? 'text-(--travel-color)' : 'text-neutral-950'} font-medium`}
+              className={`cursor-(--cursor-travel) hover:text-(--travel-color) ${cursorStyle === CursorStyle.travel ? 'text-(--travel-color)' : 'text-neutral-950'} ${boldFontWeight}`}
               onClick={() => onClick(CursorStyle.travel)}
             >
               {chunks}

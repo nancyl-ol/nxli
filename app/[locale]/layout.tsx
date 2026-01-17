@@ -5,7 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { HtmlLang } from "./_components/html-lang";
 
-const enFont = Source_Serif_4({
+const defaultFont = Source_Serif_4({
   subsets: ["latin"],
 });
 
@@ -31,7 +31,7 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale as Locale);
   const messages = await getMessages();
-  const font = isZhLocale(locale) ? zhFont : enFont;
+  const font = isZhLocale(locale) ? zhFont : defaultFont;
 
   return (
     <NextIntlClientProvider messages={messages}>

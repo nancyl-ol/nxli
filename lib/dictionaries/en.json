@@ -104,6 +104,7 @@
   "footer": {
     "credit": "Designed using <figma>Figma AI</figma>, built with <nextjs>Next.js</nextjs> and <tailwind>Tailwind CSS</tailwind> in <vscode>Visual Studio Code</vscode>, with the help of <claude>Claude Code</claude>.",
     "switchToEnglish": "English version",
-    "switchToChinese": "中文版"
+    "switchToChinese": "中文版",
+    "switchToSpanish": "Versión en español"
   }
 }

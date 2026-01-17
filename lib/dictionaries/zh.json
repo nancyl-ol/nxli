@@ -104,6 +104,7 @@
   "footer": {
     "credit": "网站使用 <figma>Figma AI</figma> 设计，基于 <nextjs>Next.js</nextjs> 与 <tailwind>Tailwind CSS</tailwind> 构建，并在 <vscode>Visual Studio Code</vscode> 中完成，由 <claude>Claude Code</claude> 协助开发。",
     "switchToEnglish": "English version",
-    "switchToChinese": "中文版"
+    "switchToChinese": "中文版",
+    "switchToSpanish": "Versión en español"
   }
 }
