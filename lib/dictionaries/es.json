@@ -4,13 +4,13 @@
     "subtitle": "Ingeniera de profesión, estudiante de corazón."
   },
   "intro": {
-    "paragraph1": "Me encanta usar la tecnología para crear soluciones significativas y centradas en las personas.",
-    "paragraph2": "En este momento estoy tomando una pausa profesional para recargar energía, explorar y seguir creciendo. Antes de eso, trabajé en <microsoft>Microsoft</microsoft>, donde creé productos educativos usados en aulas alrededor del mundo. Cuando no estoy aprendiendo algo nuevo o trasteando con ideas, me encuentras <skiing>esquiando</skiing>, jugando <tennis>tenis</tennis>, o planeando mi próxima <travel>aventura de viaje</travel>."
+    "paragraph1": "Me encanta usar la tecnología para crear soluciones de gran impacto y centradas en las personas.",
+    "paragraph2": "En este momento estoy tomando una pausa profesional para recargar energía, explorar y seguir creciendo. Antes de esto, trabajé en <microsoft>Microsoft</microsoft>, donde creé productos educativos usados en aulas alrededor del mundo. Cuando no estoy aprendiendo algo nuevo o cacharreando con ideas, me encontrarás <skiing>esquiando</skiing>, jugando <tennis>tenis</tennis>, o planeando mi próxima <travel>aventura de viaje</travel>."
   },
   "projects": {
     "title": "Proyectos",
-    "showAll": "Mostrar todos",
-    "showLess": "Mostrar menos",
+    "showAll": "Ver todos",
+    "showLess": "Ver menos",
     "items": [
       {
         "title": "Bloc de notas de clase de OneNote",
@@ -21,7 +21,7 @@
       },
       {
         "title": "Asesor de Lectura",
-        "description": "Práctica de lectura personalizada impulsada por IA para cada estudiante",
+        "description": "Práctica de lectura personalizada facilitada por IA para cada estudiante",
         "tech": ["150k MAU", "C#", "Azure", "ASP.NET", "React TS", "Webpack"],
         "link": "https://unlocked.microsoft.com/reading-coach/",
         "year": "2024"
@@ -56,7 +56,7 @@
       },
       {
         "title": "APPINITE: Investigación en IHC",
-        "description": "Sistema de programación por demostración para usuarios de Android",
+        "description": "Sistema de \"programación por demostración\" para usuarios de Android",
         "tech": ["Java"],
         "link": "/APPINITE.pdf",
         "year": "2017"

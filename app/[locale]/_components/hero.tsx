@@ -18,7 +18,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/58 to-black/70" />
 
       {/* Content */}
-      <div className="relative h-full max-w-4xl mx-auto flex items-center">
+      <div className="relative h-full max-w-4xl mx-auto flex items-center ps-2 pe-6">
         <div className="flex flex-row items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

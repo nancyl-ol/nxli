@@ -46,7 +46,7 @@ export function Footer() {
             claude: (chunks) => <FooterLink url="https://claude.ai/code">{chunks}</FooterLink>,
           })}
         </p>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 md:flex-row md:gap-4">
           {otherLocales.map((targetLocale) => (
             <button
               key={targetLocale}
