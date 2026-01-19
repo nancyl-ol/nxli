@@ -78,3 +78,9 @@ This project is configured for Firebase Hosting as a static site.
    ```
 
 The site will be deployed to the configured Firebase project (`nxli-adf02`).
+
+### Hosting Configuration
+
+The `firebase.json` file includes `cleanUrls: true` which allows routes like `/es`, `/en`, and `/zh` to be served directly. Without this setting, Next.js static exports generate files like `es.html` at the root level, and Firebase would return a 404 when accessing `/es` directly (it expects `es/index.html` by default).
+
+Note: Navigating to the root page (`/`) and being redirected to `/es` works even without `cleanUrls` because the root serves `index.html` successfully, then the client-side JavaScript performs the redirect. Since this is a client-side navigation, the browser doesn't make a new server request for `/es`—it handles the routing internally. However, directly visiting `/es` (e.g., typing it in the address bar or refreshing) requires a server request, which fails without `cleanUrls`.
