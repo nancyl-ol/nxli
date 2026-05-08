@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brex-color: #ff5900;
   --cursor-skiing: url("/skier.svg") 10 10, auto;
   --cursor-tennis: url("/tennis.svg") 10 10, auto;
   --cursor-travel: url("/airplane.svg") 10 10, auto;

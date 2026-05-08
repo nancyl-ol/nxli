@@ -42,6 +42,16 @@ export function Intro() {
         {t('paragraph1')}
         <br /><br />
         {t.rich('paragraph2', {
+          brex: (chunks) => (
+            <a
+              className={`text-neutral-950 hover:text-(--brex-color)! ${boldFontWeight}`}
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.brex.com/"
+            >
+              {chunks}
+            </a>
+          ),
           microsoft: (chunks) => (
             <a
               className={`text-neutral-950 ${boldFontWeight}`}
